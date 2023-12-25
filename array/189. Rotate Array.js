@@ -35,3 +35,8 @@ var rotate = function (nums, k) {
     let r = nums.splice(n - m)
     nums.unshift(...r)
 }
+
+// 2nd approach
+// var rotate = function(nums, k) {
+//     return nums.unshift(...nums.splice(-k % nums.length));
+// };
